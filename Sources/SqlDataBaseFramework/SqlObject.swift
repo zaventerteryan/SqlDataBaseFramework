@@ -9,7 +9,7 @@
 import Foundation
 
 @objc(SqlObject)
-public class SqlObject: NSObject, SqlObjectProtocol {
+open class SqlObject: NSObject, SqlObjectProtocol {
     private var dbType: AnyClass? = nil
     public func getType() -> AnyClass {
         if dbType == nil {
