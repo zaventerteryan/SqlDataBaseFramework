@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SqlDataBase {
+open class SqlDataBase {
     static var shared: SqlDataBase = SqlDataBase()
     
     func registerDao<T: SqlObject>(_ type: T.Type) {
